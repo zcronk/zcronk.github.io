@@ -37,54 +37,60 @@
             <p>
                 The artifact selected for the Software Design and Engineering
                 category is an Android inventory management application
-                originally developed as part of my Computer Science coursework
-                at Southern New Hampshire University.
+                originally developed in CS 360: Mobile Architecture and
+                Programming at Southern New Hampshire University.
             </p>
 
             <p>
-                The application allows users to log in and manage inventory
-                records stored in a local SQLite database. The original
-                application provided functionality for displaying inventory,
-                adding new inventory items, and deleting existing items.
+                The application was developed in Java using Android Studio and
+                uses SQLite for local data storage. It allows users to create
+                an account, log in, add and remove inventory items, adjust item
+                quantities, and optionally receive an SMS notification when an
+                item's quantity reaches zero.
             </p>
 
             <p>
-                I selected this artifact for my CS 499 ePortfolio because it
-                provides an opportunity to demonstrate my ability to evaluate
-                an existing application, identify an area where its usability
-                could be improved, and integrate additional functionality
-                without disrupting its existing features.
+                I selected this artifact because it demonstrates software
+                design and engineering across a complete mobile application.
+                The project incorporates Java, Android user-interface
+                components, object-oriented programming, event-driven
+                behavior, RecyclerView, multiple activities, and SQLite
+                database operations.
             </p>
         </section>
 
 
         <!-- Enhancement -->
         <section id="enhancement">
-            <h2>Software Engineering Enhancement</h2>
+            <h2>Enhancement</h2>
 
             <p>
-                The primary enhancement to the application was the addition of
-                inventory editing functionality. In the original application,
-                an inventory record could be added or deleted, but an existing
-                record could not be modified. Correcting an inventory value
-                therefore required deleting the record and creating it again.
+                The primary enhancement was the addition of functionality for
+                editing an existing inventory item. Users can select an item,
+                open an Edit Item screen populated with the item's current name
+                and quantity, modify those values, and save the changes.
             </p>
 
             <p>
-                The enhanced application allows users to select an existing
-                inventory item, modify its information, and save the updated
-                values to the SQLite database. The inventory display then
-                reflects the updated information without requiring the user to
-                recreate the item.
+                The application validates the entered values and updates the
+                existing SQLite record using its unique ID. When the user
+                returns to the inventory screen, the stored records are
+                reloaded so the updated information is immediately displayed.
             </p>
 
             <p>
-                The enhancement required changes across multiple parts of the
-                application, including the user interface, application logic,
-                database operations, and the interaction between those
-                components. Existing add and delete functionality was preserved
-                while the new editing capability was incorporated into the
-                application's established workflow.
+                I also redesigned the inventory-row layout to accommodate the
+                new Edit action without sacrificing readability. Item
+                information and quantity controls were separated from the Edit
+                and Delete actions, and visual separation was added between
+                inventory records.
+            </p>
+
+            <p>
+                Although editing an inventory item appears to be a relatively
+                small user-facing feature, implementing it required coordinated
+                changes across the user interface, application logic, data
+                model, and persistence layer.
             </p>
         </section>
 
@@ -93,53 +99,58 @@
         <section id="skills">
             <h2>Skills Demonstrated</h2>
 
-            <p>
-                This enhancement demonstrates several software design and
-                engineering skills developed throughout the Computer Science
-                program.
-            </p>
+            <div class="skills-grid">
 
-            <ul>
-                <li>
-                    Evaluating an existing software application and identifying
-                    opportunities for functional improvement
-                </li>
+                <div class="skill-item">
+                    <h3>Java & Android</h3>
+                    <p>
+                        Extended an existing Java-based Android application
+                        while preserving its established functionality.
+                    </p>
+                </div>
 
-                <li>
-                    Extending an existing Java codebase while maintaining
-                    previously implemented functionality
-                </li>
+                <div class="skill-item">
+                    <h3>Application Design</h3>
+                    <p>
+                        Coordinated changes across activities, intents,
+                        application logic, and user-interface components.
+                    </p>
+                </div>
 
-                <li>
-                    Developing Android user interfaces using XML layouts and
-                    Java application logic
-                </li>
+                <div class="skill-item">
+                    <h3>SQLite</h3>
+                    <p>
+                        Updated existing inventory records using unique IDs and
+                        reloaded stored data after editing.
+                    </p>
+                </div>
 
-                <li>
-                    Integrating application functionality with a local SQLite
-                    database
-                </li>
+                <div class="skill-item">
+                    <h3>User Interface Design</h3>
+                    <p>
+                        Redesigned inventory rows to support additional actions
+                        while maintaining readability and usability.
+                    </p>
+                </div>
 
-                <li>
-                    Implementing database update operations for existing
-                    inventory records
-                </li>
+                <div class="skill-item">
+                    <h3>Input Validation</h3>
+                    <p>
+                        Validated edited inventory values before committing
+                        changes to persistent storage.
+                    </p>
+                </div>
 
-                <li>
-                    Designing user interactions for editing and maintaining
-                    inventory data
-                </li>
+                <div class="skill-item">
+                    <h3>Testing</h3>
+                    <p>
+                        Used incremental testing throughout development to
+                        verify the enhancement without disrupting existing
+                        inventory functionality.
+                    </p>
+                </div>
 
-                <li>
-                    Applying input validation and providing user feedback during
-                    inventory operations
-                </li>
-
-                <li>
-                    Testing new functionality while verifying that existing
-                    application behavior remains intact
-                </li>
-            </ul>
+            </div>
         </section>
 
 
@@ -147,67 +158,147 @@
         <section id="outcomes">
             <h2>Course Outcomes</h2>
 
-            <h3>Course Outcome 3</h3>
+            <div class="outcome">
+                <h3>Course Outcome 1</h3>
 
-            <p>
-                The enhancement supports Course Outcome 3 by demonstrating my
-                ability to evaluate an existing application's design and make
-                engineering decisions that balance additional functionality
-                with the complexity introduced by those changes.
-            </p>
+                <p>
+                    The enhancement supports Course Outcome 1 by improving the
+                    accuracy and maintainability of inventory information.
+                    Allowing existing records to be edited provides users with
+                    more reliable information that can support
+                    inventory-related decisions.
+                </p>
+            </div>
 
-            <p>
-                Rather than redesigning the application unnecessarily, the
-                enhancement extends the existing inventory workflow by adding
-                editing functionality while preserving the application's
-                original add, display, and delete capabilities.
-            </p>
+            <div class="outcome">
+                <h3>Course Outcome 2</h3>
 
+                <p>
+                    Course Outcome 2 is demonstrated through the clear editing
+                    workflow, user-interface changes, validation messages, and
+                    visual organization of inventory records. These changes
+                    improve how information and application functionality are
+                    presented to the user.
+                </p>
+            </div>
 
-            <h3>Course Outcome 4</h3>
+            <div class="outcome">
+                <h3>Course Outcome 4</h3>
 
-            <p>
-                The enhancement supports Course Outcome 4 through the use of
-                well-founded tools and techniques in computer science. Android
-                development, Java, XML layouts, SQLite, and software engineering
-                practices were used together to provide additional value to the
-                user by making inventory records easier to maintain.
-            </p>
-        </section>
-
-
-        <!-- Artifact -->
-        <section id="artifact">
-            <h2>Enhanced Artifact</h2>
-
-            <p>
-                The completed enhancement adds inventory editing to the existing
-                Android application and integrates the new functionality with
-                the application's inventory display and SQLite database.
-            </p>
-
-            <p>
-                Supporting materials, including the artifact narrative,
-                screenshots, and source code, will be provided below as the
-                ePortfolio is completed.
-            </p>
-
-            <div class="artifact-links">
-                <a href="#" class="button">Artifact Narrative</a>
-                <a href="#" class="button">View Source Code</a>
+                <p>
+                    Course Outcome 4 is demonstrated through the use of Java,
+                    Android Studio, Android activities and intents,
+                    RecyclerView, and SQLite to extend a working software
+                    solution with additional functionality that provides value
+                    to the user.
+                </p>
             </div>
         </section>
 
 
-        <!-- Navigation -->
-        <section>
-            <h2>Portfolio Navigation</h2>
+        <!-- Development Reflection -->
+        <section id="reflection">
+            <h2>Development Reflection</h2>
 
             <p>
-                Return to the main ePortfolio to view the remaining capstone
-                enhancement categories and supporting materials.
+                Completing the enhancement strengthened my understanding of how
+                different layers of an application work together. The selected
+                inventory record had to be identified, its existing values
+                passed to the Edit Item activity, the user's changes validated,
+                and the correct SQLite record updated. The inventory screen
+                then had to reload the stored data when the user returned.
             </p>
 
+            <p>
+                One of the primary challenges was incorporating the Edit action
+                without making the existing inventory rows difficult to read.
+                Adding another button reduced the space available for longer
+                item names, which required reorganizing the layout and adding
+                clearer visual separation between records.
+            </p>
+
+            <p>
+                I used incremental testing while implementing changes to the
+                model, database logic, editing activity, and interface. This
+                helped confirm that the new functionality worked correctly
+                while the application's existing inventory features continued
+                to function as intended.
+            </p>
+        </section>
+
+
+        <!-- Artifact Materials -->
+        <section id="artifact">
+            <h2>Artifact Materials</h2>
+
+            <p>
+                The following materials document the completed Software Design
+                and Engineering enhancement.
+            </p>
+
+            <div class="artifact-links">
+                <a href="documents/software-engineering-narrative.pdf" class="button">View Artifact Narrative</a>
+                <a href="artifacts/inventory_management_android.zip" class="button">Download Source Code</a>
+            </div>
+        </section>
+
+
+        <!-- Screenshots -->
+        <section id="screenshots">
+    <h2>Application Screenshots</h2>
+
+    <p>
+        The screenshots below demonstrate the completed inventory editing
+        workflow, from selecting an existing inventory record to saving and
+        displaying the updated information.
+    </p>
+
+    <div class="screenshot-grid">
+
+        <figure class="screenshot-card">
+            <img
+                src="images/inventory_screen.png"
+                alt="Inventory screen showing item quantities and Edit and Delete controls">
+
+            <figcaption>
+                <strong>Inventory Management</strong>
+                The redesigned inventory screen provides quantity controls
+                and clearly separated Edit and Delete actions for each
+                inventory record.
+            </figcaption>
+        </figure>
+
+        <figure class="screenshot-card">
+            <img
+                src="images/edit_item.png"
+                alt="Edit Inventory Item screen populated with an existing item's name and quantity">
+
+            <figcaption>
+                <strong>Edit Existing Item</strong>
+                Selecting Edit opens the existing inventory record with its
+                current name and quantity already populated for modification.
+            </figcaption>
+        </figure>
+
+        <figure class="screenshot-card">
+            <img
+                src="images/inventory_updated.png"
+                alt="Inventory screen showing an updated wireless keyboard record with confirmation message">
+
+            <figcaption>
+                <strong>Persisted Update</strong>
+                After saving, the inventory data is reloaded from SQLite and
+                the updated record is displayed. The confirmation message
+                provides immediate feedback that the update was successful.
+            </figcaption>
+        </figure>
+
+    </div>
+</section>
+
+
+        <!-- Back -->
+        <section class="portfolio-return">
             <a href="index.html" class="button">Back to ePortfolio</a>
         </section>
 
@@ -216,7 +307,8 @@
 
     <footer>
         <p>
-            Computer Science ePortfolio | Southern New Hampshire University |
+            Computer Science ePortfolio |
+            Southern New Hampshire University |
             CS 499
         </p>
     </footer>

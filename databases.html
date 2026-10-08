@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Databases | Computer Science ePortfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <h1>Databases</h1>
+            <p>CS 499 Capstone Enhancement</p>
+
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Artifact Overview</h2>
+            <p>
+                The artifact selected for the Databases category is an
+                Android inventory management application originally developed
+                in CS 360: Mobile Architecture and Programming at Southern
+                New Hampshire University.
+            </p>
+            <p>
+                The application was developed in Java using Android Studio
+                and uses SQLite for persistent storage of inventory records
+                and user accounts. The database supports CRUD operations,
+                allowing information to be maintained across application
+                sessions.
+            </p>
+            <p>
+                I selected this artifact because its original database
+                implementation provided opportunities to improve data
+                organization, preserve existing records during database
+                upgrades, and strengthen the security of stored user
+                credentials.
+            </p>
+        </section>
+                
+        <section id="enhancement">
+            <h2>Enhancement</h2>
+
+            <p>
+                The database enhancement focused on improving data
+                organization, maintaining compatibility with existing
+                records, and strengthening the security of stored
+                user credentials.
+            </p>
+
+            <p>
+                I expanded the SQLite database schema to include an
+                inventory category field and updated the associated
+                CRUD operations to support the additional information.
+                This allows inventory records to contain more
+                descriptive information while maintaining the
+                application's existing functionality.
+            </p>
+
+            <p>
+                I also implemented database migration logic to preserve
+                existing inventory records and user accounts during
+                schema upgrades. Rather than replacing the database
+                during an upgrade, the migration process updates its
+                structure while retaining previously stored data.
+            </p>
+
+            <p>
+                To address a security weakness in the original
+                implementation, I replaced plaintext password storage
+                with salted PBKDF2 password hashing. User credentials
+                are now protected using password hashes, and login
+                validation verifies entered passwords against the
+                stored credentials.
+            </p>
+
+            <p>
+                Testing included database upgrades and verification
+                of data preservation. This process also demonstrated
+                the importance of accurately representing earlier
+                database versions when testing migration behavior.
+            </p>
+        </section>
+      
+        <section id="skills">
+            <h2>Skills Demonstrated</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-item">
+                    <h3>Database Design</h3>
+                    <p>
+                        Expanded the SQLite database schema to support
+                        inventory categories and updated CRUD operations
+                        to accommodate the additional data.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Database Migration</h3>
+                    <p>
+                        Implemented schema migration logic that preserves
+                        existing inventory records and user accounts
+                        during database upgrades.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Data Security</h3>
+                    <p>
+                        Replaced plaintext password storage with salted
+                        PBKDF2 password hashing to improve credential
+                        protection and authentication security.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Database Testing</h3>
+                    <p>
+                        Tested database upgrades and data preservation,
+                        identifying the importance of accurately
+                        reproducing earlier database versions when
+                        validating migration behavior.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="outcomes">
+            <h2>Course Outcomes</h2>
+
+            <div class="outcome">
+                <h3>Course Outcome 4</h3>
+                <p>
+                    This enhancement demonstrates the use of SQLite,
+                    Java, database design, and migration techniques
+                    to improve an existing application's data management
+                    capabilities. The changes expanded inventory
+                    information while preserving existing records
+                    and user accounts during database upgrades.
+                </p>
+            </div>
+
+            <div class="outcome">
+                <h3>Course Outcome 5</h3>
+                <p>
+                    This enhancement demonstrates a security mindset
+                    through the identification and mitigation of
+                    insecure credential storage. Replacing plaintext
+                    passwords with salted PBKDF2 password hashing
+                    improved the protection of sensitive user data
+                    and strengthened the application's authentication
+                    process.
+                </p>
+            </div>
+        </section>
+        
+        <section id="reflection">
+            <h2>Development Reflection</h2>
+
+            <p>
+                This enhancement strengthened my understanding of
+                database design and the challenges involved in modifying
+                an existing application without disrupting its data.
+                Expanding the SQLite schema required consideration of
+                how database changes would affect existing records,
+                application functionality, and future upgrades.
+            </p>
+
+            <p>
+                Implementing database migration logic demonstrated the
+                importance of preserving data when introducing structural
+                changes. Testing the migration process also reinforced
+                the need to accurately reproduce earlier database
+                versions to verify that upgrades behave as intended.
+            </p>
+
+            <p>
+                Improving password storage provided an opportunity to
+                apply security principles to an existing application.
+                Replacing plaintext credentials with salted PBKDF2
+                password hashing reinforced the importance of
+                identifying vulnerabilities and protecting sensitive
+                information as part of software development.
+            </p>
+
+            <p>
+                Overall, this enhancement demonstrated how database
+                design, data integrity, testing, and security work
+                together to improve application reliability. It also
+                strengthened my ability to evaluate existing systems
+                and implement changes that provide practical value
+                without sacrificing existing functionality.
+            </p>
+        </section>        
+        
+        <section id="artifact">
+            <h2>Artifact Materials</h2>
+
+            <p>
+                The following materials include the enhancement narrative
+                and source code before and after the database enhancement.
+            </p>
+
+            <div class="artifact-links">
+                <a href="documents/databases_narrative.pdf"
+                class="button" target="_blank">
+                    View Artifact Narrative
+                </a>
+
+                <a href="artifacts/inventory_algorithms_data_structures.zip"
+                class="button" download>
+                    Download Before Enhancement
+                </a>
+
+                <a href="artifacts/inventory_databases.zip"
+                class="button" download>
+                    Download After Enhancement
+                </a>
+            </div>
+        </section>        
+        
+        <section id="screenshots">
+            <h2>Application Screenshots</h2>
+
+            <div class="screenshot-grid">
+
+                <div class="screenshot-card">
+                    <img src="images/inventory_category.png"
+                        alt="Inventory record displaying category information">
+                    <p>
+                        Inventory records include category information
+                        supported by the enhanced SQLite schema.
+                    </p>
+                </div>
+
+                <div class="screenshot-card">
+                    <img src="images/database_migration.png"
+                        alt="Database migration test results">
+                    <p>
+                        Database migration testing verifies that existing
+                        inventory records and user accounts are preserved
+                        during upgrades.
+                    </p>
+                </div>
+
+                <div class="screenshot-card">
+                    <img src="images/password_security.png"
+                        alt="Secure password storage verification">
+                    <p>
+                        Password security verification demonstrates
+                        the use of salted PBKDF2 hashing instead
+                        of plaintext credential storage.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="portfolio-return">
+            <a href="index.html" class="button">Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Computer Science ePortfolio |
+            Southern New Hampshire University |
+            CS 499
+        </p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-image" src="" alt="Expanded screenshot">
+    </div>
+
+<script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+
+    document.querySelectorAll(".screenshot-card img").forEach(img => {
+        img.addEventListener("click", () => {
+            lightboxImage.src = img.src;
+            lightboxImage.alt = img.alt;
+            lightbox.classList.add("active");
+        });
+    });
+
+    lightbox.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+        lightboxImage.src = "";
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            lightbox.classList.remove("active");
+            lightboxImage.src = "";
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Algorithms and Data Structures | Computer Science ePortfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-content">
+            <h1>Algorithms and Data Structures</h1>
+            <p>CS 499 Capstone Enhancement</p>
+
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Artifact Overview -->
+        <section id="overview">
+            <h2>Artifact Overview</h2>
+
+            <p>
+                The artifact selected for the Algorithms and Data Structures
+                category is an Android inventory management application
+                originally developed in CS 360: Mobile Architecture and
+                Programming at Southern New Hampshire University.
+            </p>
+
+            <p>
+                The application was developed in Java using Android Studio and
+                uses SQLite for local data storage. Inventory records are
+                retrieved from the database and displayed to the user through
+                a RecyclerView.
+            </p>
+
+            <p>
+                I selected this artifact because its inventory data provides an
+                opportunity to apply algorithms and data structures to improve
+                how users locate and organize information within the application.
+            </p>
+        </section>
+
+
+        <!-- Enhancement -->
+        <section id="enhancement">
+            <h2>Enhancement</h2>
+
+            <p>
+                The primary enhancement was the addition of search and sorting
+                functionality to the inventory display. Users can search for
+                inventory records by item name and sort the displayed inventory
+                to make specific records easier to locate and evaluate.
+            </p>
+
+            <p>
+                Search functionality filters the inventory by comparing item
+                names with the user's search term and constructing a set of
+                matching results for display. Sorting logic organizes the
+                displayed records while preserving the current filtered results.
+            </p>
+
+            <p>
+                Separating the sorting logic from the complete inventory dataset
+                allows searching and sorting to work together. A user can narrow
+                the inventory through a search and then change the sort order
+                without losing the filtered results.
+            </p>
+
+            <p>
+                The enhancement also provided an opportunity to evaluate
+                algorithm selection in relation to the size and characteristics
+                of the dataset. Linear searching is appropriate for the
+                application's relatively small inventory, while larger datasets
+                could justify alternative approaches with different performance
+                characteristics.
+            </p>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills Demonstrated</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-item">
+                    <h3>Search Algorithms</h3>
+                    <p>
+                        Implemented inventory searching by evaluating stored records against user-provided search criteria.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Sorting Algorithms</h3>
+                    <p>
+                        Added sorting functionality that organizes displayed inventory records while maintaining the current filtered dataset.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Data Structures</h3>
+                    <p>
+                        Used inventory collections to manage complete and filtered datasets during search and sorting operations.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Algorithm Analysis</h3>
+                    <p>
+                        Evaluated algorithm choices based on dataset size, efficiency, application requirements, and potential scalability.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Application State</h3>
+                    <p>
+                        Maintained filtered results while allowing users to change sorting options without resetting their search.
+                    </p>
+                </div>
+
+                <div class="skill-item">
+                    <h3>Java & Android</h3>
+                    <p>
+                        Integrated new algorithmic functionality into an existing Java-based Android inventory application.
+                    </p>
+                </div>
+                <div class="skill-item">
+                    <h3>Automated Testing</h3>
+                    <p>
+                        Added four instrumented tests covering search filtering, alphabetical sorting, quantity sorting, and combined search-and-sort behavior. The complete test suite passes all nine tests.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Course Outcomes -->
+        <section id="outcomes">
+            <h2>Course Outcomes</h2>
+
+            <div class="outcome">
+                <h3>Course Outcome 3</h3>
+
+                <p>
+                    This enhancement demonstrates the design and evaluation of
+                    a computing solution using algorithmic principles. Search
+                    and sorting techniques were selected based on the needs and
+                    size of the inventory dataset while considering the
+                    trade-offs involved in alternative approaches.
+                </p>
+            </div>
+
+            <div class="outcome">
+                <h3>Course Outcome 4</h3>
+
+                <p>
+                    This enhancement demonstrates the use of Java, Android
+                    development tools, data structures, and algorithmic
+                    techniques to extend an existing application with
+                    functionality that improves how users locate and organize
+                    inventory information.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Development Reflection -->
+        <section id="reflection">
+            <h2>Development Reflection</h2>
+
+            <p>
+                Developing the search and sorting enhancement strengthened my
+                understanding of how algorithm selection affects both
+                application behavior and usability. Search functionality
+                required working with the inventory collection to identify
+                matching records, while sorting required organizing the
+                currently displayed dataset without interfering with the
+                user's active search.
+            </p>
+
+            <p>
+                An important design consideration was ensuring that search and
+                sorting behaved as complementary features rather than separate
+                operations. Keeping the sorting logic separate allowed filtered
+                results to remain filtered when the user selected a different
+                sorting option.
+            </p>
+
+            <p>
+                The enhancement also reinforced the importance of selecting
+                algorithms based on the characteristics of the data being
+                processed. A straightforward linear search is suitable for the
+                relatively small inventory used by this application. For much
+                larger datasets, alternative search techniques and data
+                structures could provide improved performance and would need to
+                be evaluated against their additional complexity.
+            </p>
+            <p>
+                Automated testing was also expanded to verify the new functionality.
+                Four instrumented tests were added for search filtering, alphabetical
+                sorting, quantity sorting, and combined search-and-sort behavior. The
+                complete instrumented test suite passes all nine tests, including tests
+                retained from the previous enhancement, helping confirm that the new
+                functionality did not introduce regressions.
+            </p>
+        </section>
+
+
+        <!-- Artifact Materials -->
+        <section id="artifact">
+            <h2>Artifact Materials</h2>
+
+            <p>
+                The following materials document the completed Algorithms and
+                Data Structures enhancement.
+            </p>
+
+            <div class="artifact-links">
+                <a href="documents/algorithms_data_structures_narrative.pdf" class="button" target="_blank">View Artifact Narrative</a>
+                <a href="artifacts/inventory_management_android.zip" class="button" download>Download Original Source Code</a>
+                <a href="artifacts/inventory_algorithms_data_structures.zip" class="button" download>Download Enhanced Source Code</a>
+            </div>
+        </section>
+
+
+        <!-- Screenshots -->
+         <section id="screenshots">
+    <h2>Application Screenshots</h2>
+
+    <p>
+        The screenshots below demonstrate the completed inventory
+        search and sorting functionality.
+    </p>
+
+    <div class="screenshot-grid">
+
+        <figure class="screenshot-card">
+            <img
+                src="images/inventory_search_sort.png"
+                alt="Inventory screen showing search and sorting controls">
+
+            <figcaption>
+                <strong>Search and Sort Controls</strong>
+                The enhanced inventory interface provides controls for
+                searching inventory records and changing how the displayed
+                records are sorted.
+            </figcaption>
+        </figure>
+
+        <figure class="screenshot-card">
+            <img
+                src="images/inventory_search_results.png"
+                alt="Inventory screen displaying filtered search results">
+
+            <figcaption>
+                <strong>Filtered Search Results</strong>
+                Entering a search term filters the inventory collection so
+                that only records matching the user's search criteria are
+                displayed.
+            </figcaption>
+        </figure>
+
+        <figure class="screenshot-card">
+            <img
+                src="images/inventory_filtered_sorted.png"
+                alt="Inventory screen showing filtered results with sorting applied">
+
+            <figcaption>
+                <strong>Filtered and Sorted Results</strong>
+                Sorting is applied to the currently displayed dataset,
+                allowing filtered search results to remain active while
+                their display order is changed.
+            </figcaption>
+        </figure>
+
+    </div>
+</section>
+
+
+        <!-- Back -->
+        <section class="portfolio-return"><a href="index.html" class="button">Back to Home</a>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Computer Science ePortfolio |
+            Southern New Hampshire University |
+            CS 499
+        </p>
+    </footer>
+
+<!-- Screenshot Lightbox -->
+<div id="lightbox" class="lightbox">
+    <img id="lightbox-image" src="" alt="Expanded screenshot">
+</div>
+
+<script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+
+    document.querySelectorAll(".screenshot-card img").forEach(img => {
+        img.addEventListener("click", () => {
+            lightboxImage.src = img.src;
+            lightboxImage.alt = img.alt;
+            lightbox.classList.add("active");
+        });
+    });
+
+    lightbox.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+        lightboxImage.src = "";
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            lightbox.classList.remove("active");
+            lightboxImage.src = "";
+        }
+    });
+</script>
+
+</body>
+</html>
